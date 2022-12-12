@@ -1,4 +1,4 @@
-INSERT INTO
+INSERT INTO	
 	user_mst
 values
 	(0, 'aaa','1234','문승주','aaa@gmail.com',NOW(),NOW()),
