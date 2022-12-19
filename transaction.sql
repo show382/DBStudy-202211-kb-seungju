@@ -44,4 +44,4 @@ rollback to p1;/*to p1 을 안붙이면 처음으로 돌아간다*/
 
 select * from emp_mst;
 
-commit;
+commit;order_mst
