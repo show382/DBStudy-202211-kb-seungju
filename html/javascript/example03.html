@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+
+    <script src="js/common.js"></script>
+
+    <script>
+        // Funtion 1
+        function func1(){
+            alert('func1 - 안녕하세요.');
+        }
+        // func1();
+        
+        const func2 = () => {
+            alert('func2 - 안녕')
+        }
+
+        
+        const moveExample02 = () => {
+            location.href();
+        }
+      
+    </script>
+</head>
+<body>
+    <!-- <button onclick="func1();">Btn 1</button> -->
+    <button id="btn1">Btn 1</button>
+    <input style="width: 100px;"/>
+
+    <button onclick="helloworld();">Helloworld!</button>
+
+    <button onclick="moveExample02();">Move 02</button>
+    <!-- <input id="input1" style="width"> -->
+    <a href="./example02.html">move 02</a>
+    <script>
+        // const onClikHandler = document.querySelector('#btn1');
+        // onClikHandler.onclick = func1;
+        document.querySelector('#btn1').onclick = func2;
+    </script>
+</body>
+</html>
