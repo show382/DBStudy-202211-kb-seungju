@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mongmong</title>
+    <style>
+        body,li,ul,a {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .title {
+            font-size: 50px;
+            text-align: center;
+        }
+       
+        .sub {
+            padding: 0;
+            margin: 0;
+        }
+        .nav-bar {
+            contain-intrinsic-inline-size: 100%;
+        }
+        .nav-bar>ul {
+            width: 2500px;
+            height: 200px;
+            margin: 0;
+            margin-top: 30px;
+        }
+        .nav-bar>ul>li {
+            float: left;
+        }
+        .nav-bar a {
+            display: block;
+            width: 190px;
+            height: 60px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+        }
+        .nav-bar>ul>li>a {
+            background-color: yellow;
+            color: black;
+        }
+        .nav-bar>ul>li:first-child>a {
+            border-top-left-radius: 20px;
+        }
+        .nav-bar>ul>li:last-child>a {
+            border-top-right-radius: 20px;
+        }
+        .sub>li>a {
+            background-color: rgb(14,88,44);
+            color: yellow;
+        }
+        .sub>li:last-child>a {
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .nav-bar>ul>li:hover>a {
+            background-color: rgb(14,88,44);
+            color: yellow;
+            font-weight: bold;
+        }
+        .sub>li:hover>a {
+            font-weight: bold;
+        }
+        .sub {
+            height: 10px;
+            overflow: hidden;
+        }
+        .nav-bar>ul>li:hover>a+.sub {
+            height: 300px;
+            transition-duration: 0.5s;
+        }
+        .button {
+            margin: 0px 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 80px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><img class="logo" src="/project/img/cloud.png">몽몽서점</h1>
+        <div class="button">
+            <form action="book">
+                <button class="book">추천 도서</button><button class="book">신작</button><button class="book">이벤트</button>
+            </form>
+            <form action="login">
+                <button class="login">로그인</button><button class="login">회원가입</button><button class="login">마이페이지</button>
+            </form>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">카테고리</a>
+                    <ul class="sub">
+                        <li><a href="#">1번</a></li>
+                        <li><a href="#">2번</a></li>
+                        <li><a href="#">3번</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">국내 도서</a></li>
+                <li><a href="#">해외 도서</a></li>
+                <li><a href="#">시집</a></li>
+                <li><a href="#">부모님의 서재</a></li>
+                <li><a href="#">토이/놀이</a></li>
+                <li><a href="#">0~3세</a></li>
+                <li><a href="#">4~7세</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
