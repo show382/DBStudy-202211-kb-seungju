@@ -12,6 +12,7 @@
         a {
             text-decoration: none;
         }
+       
         .container {
             display: flex;
         }
@@ -41,7 +42,7 @@
         }
         .main-cover {
             width: 100%;
-            height: 200px;
+            height: 400px;
             object-fit: cover;
         }
         .main-nav-bar {
@@ -65,7 +66,7 @@
             text-align: center;
         }
         .form-title {
-            text-align: center;
+            text-align:center;
             font-size: 30px;
         }
         .row-label {
@@ -73,14 +74,21 @@
             vertical-align: top;
         }
         .form-input {
-            width: 100%;
+            margin: 3px 0px;
+            width: 96%;
+            border-radius: 3px;
         }
-        .form-textarea {
-            width: 100%;
+        .form-select {
+            font-weight: 500;
+            border-radius: 3px;
+            height: 24.5px;
         }
         .form-button-container {
             display: flex;
             justify-content: space-between;
+        }
+        .form-table-row {
+            font-weight: 700;
         }
         .form-btn {
             width: 150px;
@@ -94,6 +102,12 @@
             border: 0;
             border-radius: 10px;
         }
+        .textarea {
+            resize: none;
+            width: 98%;
+            height: 70px;
+            border-radius: 3px;
+        }
         
     </style>
     <script></script>
@@ -105,20 +119,20 @@
                 <img class="side-nav-icon" src="asset/image/Rectangle.png">
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="asset/image/Rectangle.png">
+                <img class="side-nav-icon" src="asset/image/Screenshot_1-removebg-preview.png">
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="asset/image/Rectangle.png">
+                <img class="side-nav-icon" src="asset/image/2-removebg-preview.png">
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="asset/image/Rectangle.png">
+                <img class="side-nav-icon" src="asset/image/3-removebg-preview.png">
             </a>
             <a href="#" class="side-nav-item">
-                <img class="side-nav-icon" src="asset/image/Rectangle.png">
+                <img class="side-nav-icon" src="asset/image/sadasd.png">
             </a>
         </div>
         <div class="main-container">
-            <img class="main-cover" src="asset/image/home 1.png" />
+            <img class="main-cover" src="asset/image/vcxv.png" />
             <div class="main-nav-bar">
                 <!-- <div class="main-cover"> -->
                     <a href="#" class="main-nav-item">HOME</a>
@@ -143,8 +157,8 @@
                         </tr>
                         <tr class="form-table-row">
                             <td class="row-label">답변받을 이메일</td>
-                            <td colspan="3"><input id="emaiId" name="emaiId" class="form-input" />></td>
-                            <td>@</td>
+                            <td colspan="1"><input id="emaiId" name="emaiId" class="form-input" /></td>
+                            <td>  @</td>
                             <td>
                                 <select id="emailAddress" name="emailAddress" class="form-select">
                                     <option value="gmail.com" selected>gmail.com</option>
@@ -154,7 +168,7 @@
                         </tr>
                         <tr class="form-table-row">
                             <td class="row-label">문의 내용</td>
-                            <td colspan="3"><textarea id="contents" name="contents" rows="4"  ></textarea></td>
+                            <td colspan="3"><textarea id="contents" name="contents" class="textarea"  ></textarea></td>
                         </tr>
                     </table>
                     <div class="form-button-container">
